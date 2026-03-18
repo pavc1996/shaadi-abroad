@@ -15,6 +15,8 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ['better-sqlite3'],
   },
+  // Increase static generation timeout for pages with DB calls
+  staticPageGenerationTimeout: 120,
 };
 
 module.exports = nextConfig;

@@ -140,8 +140,13 @@ export default function Footer() {
                 { href: '/process', label: 'Our Process' },
                 { href: '/inquire', label: 'Book Consultation' },
                 { href: '/about', label: 'About Us' },
+                { href: '/real-weddings', label: 'Real Weddings' },
+                { href: '/gallery', label: 'Gallery' },
+                { href: '/blog', label: 'Blog & Guides' },
                 { href: '/faq', label: 'FAQ' },
                 { href: '/contact', label: 'Contact' },
+                { href: '/vendors', label: 'Vendor Partnerships' },
+                { href: '/careers', label: 'Careers' },
               ].map((item) => (
                 <li key={item.href}>
                   <Link

@@ -1,10 +1,7 @@
-import type { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with Shaadi Abroad. Based in Toronto, serving Canadian couples planning Indian destination weddings worldwide.',
-};
 
 export default function ContactPage() {
   return (
