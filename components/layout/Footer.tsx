@@ -111,8 +111,7 @@ export default function Footer() {
             <h4 className="font-playfair text-base font-semibold text-ivory mb-5">Destinations</h4>
             <ul className="space-y-3">
               {[
-                { href: '/destinations/riviera-maya', label: 'Riviera Maya, Mexico' },
-                { href: '/destinations/cancun', label: 'Cancun, Mexico' },
+                { href: '/destinations/cancun-riviera-maya', label: 'Cancun & Riviera Maya' },
                 { href: '/destinations/punta-cana', label: 'Punta Cana' },
                 { href: '/destinations/jamaica', label: 'Jamaica' },
                 { href: '/destinations/italy', label: 'Italy' },
