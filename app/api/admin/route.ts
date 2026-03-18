@@ -1,6 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 
+// Ensure newsletter table exists
+function ensureTables(db: any) {
+  db.exec(`CREATE TABLE IF NOT EXISTS newsletter_subscribers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT UNIQUE NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )`);
+}
+
 // Admin login
 export async function POST(request: NextRequest) {
   try {
