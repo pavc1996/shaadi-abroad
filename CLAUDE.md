@@ -62,6 +62,7 @@
 | `/gallery` | Static | Photo gallery by destination + masonry grid |
 | `/real-weddings` | Static | 3 full case studies with stories, photos, details |
 | `/quiz` | Client | 8-question interactive destination matcher |
+| `/venues` | Client | Wedding Venues & Resorts — worldwide directory of 30+ curated venues across 12 countries and 4 regions with Indian wedding details |
 | `/vendors` | Client | Vendor partnership info + application form |
 | `/careers` | Static | 3 open positions + company culture |
 | `/privacy` | Static | Privacy policy (PIPEDA/CASL compliant) |
@@ -163,6 +164,59 @@ git push origin main
 
 ---
 
+## Resort & Venue Database
+
+All venue data is baked into `/app/venues/VenuesClient.tsx` as a typed `regions` array. 32 resorts across 4 regions:
+
+### Caribbean
+| Resort | Location | Capacity | Indian Wedding Rating |
+|--------|----------|----------|-----------------------|
+| Excellence Playa Mujeres | Cancun, Mexico | 300 | ★★★★★ — on-site Basmati Indian restaurant |
+| Secrets Maroma Beach | Riviera Maya, Mexico | 250 | ★★★★☆ — named South Asian package |
+| Dreams Playa Mujeres | Cancun, Mexico | 400 | ★★★★☆ — "Dulha & Dulhan" package, over-water platform |
+| Barceló Maya Palace | Riviera Maya, Mexico | 1,000 | ★★★★★ — 3 Indian packages, resident henna artist |
+| Hard Rock Punta Cana | Dominican Republic | 1,000 | ★★★★★ — permanent Indian Wedding Specialists |
+| Excellence El Carmen | Dominican Republic | 200 | ★★★★☆ — boutique ultra-luxury |
+| Barceló Bávaro Palace | Dominican Republic | 800 | ★★★★☆ — large capacity, Barceló Indian expertise |
+| Moon Palace Jamaica | Jamaica | 400 | ★★★★★ — resident Indian chef |
+| Round Hill Hotel | Jamaica | 120 | ★★★★☆ — full resort buyout, 110 acres |
+| Sandals Montego Bay | Jamaica | 60 | ★★★☆☆ — couples only, small ceremonies |
+| Atlantis Paradise Island | Bahamas | 600 | ★★★★★ — "Pyaar Atlantis" dedicated Indian program |
+
+### Europe
+| Resort | Location | Capacity | Indian Wedding Rating |
+|--------|----------|----------|-----------------------|
+| Villa Cimbrone | Ravello, Italy | 100 | ★★★★☆ — Terrace of Infinity, from €15K venue |
+| Belmond Hotel Caruso | Ravello, Italy | 120 | ★★★★☆ — infinity pool terrace, from €20K |
+| Borgo Egnazia | Puglia, Italy | 350 | ★★★★★ — Europe's #1 Indian wedding resort, Agni provisions |
+| Canaves Oia Epitome | Santorini, Greece | 60 | ★★★★☆ — Caldera views, symbolic only |
+| Mystique Santorini | Santorini, Greece | 80 | ★★★★☆ — volcanic cliff setting |
+| Katikies Hotel | Santorini, Greece | 70 | ★★★★☆ — iconic Condé Nast property |
+
+### Middle East & Asia
+| Resort | Location | Capacity | Indian Wedding Rating |
+|--------|----------|----------|-----------------------|
+| Atlantis The Palm | Dubai, UAE | 1,000 | ★★★★★ — dedicated Indian team, transparent pricing |
+| One&Only Royal Mirage | Dubai, UAE | 700 | ★★★★★ — Moorish palace, 2,500sqm event space |
+| Waldorf Astoria Dubai | Dubai, UAE | 500 | ★★★★☆ — Indian-inspired ballroom, per-pax pricing |
+| Soneva Jani | Maldives | 40 | ★★★☆☆ — overwater, intimate/symbolic |
+| Gili Lankanfushi | Maldives | 50 | ★★★☆☆ — Secret Wedding from $13,489 |
+| Four Seasons Jimbaran | Bali | 250 | ★★★★★ — Hindu setting, fire ceremony-friendly |
+| Alila Villas Uluwatu | Bali | 400 | ★★★★★ — full resort buyout, clifftop |
+| Mandapa Ritz-Carlton | Ubud, Bali | 150 | ★★★★★ — 100-year-old Hindu temple on property |
+| Amanpuri | Phuket, Thailand | 100 | ★★★★☆ — original Aman, $105K min spend |
+| Four Seasons Koh Samui | Koh Samui, Thailand | 120 | ★★★★☆ — private island ceremony option |
+
+### Indian Ocean
+| Resort | Location | Capacity | Indian Wedding Rating |
+|--------|----------|----------|-----------------------|
+| One&Only Le Saint Géran | Mauritius | 200 | ★★★★★ — Michelin-starred Indian restaurant (Rasoi by Vineet) |
+| Constance Belle Mare | Mauritius | 250 | ★★★★☆ — Indo-Mauritian culture, Mon–Fri only |
+
+**Key insight:** Best resorts for fire ceremonies (Agni/Mangal Pheras): Borgo Egnazia (Italy), Barceló Maya Palace (Mexico), Hard Rock Punta Cana, Atlantis Dubai, Four Seasons Jimbaran, Mandapa Ritz-Carlton, Moon Palace Jamaica, Atlantis Bahamas.
+
+---
+
 ## What's Left To Do
 
 - [ ] Deploy to Vercel (need Vercel token)
@@ -179,4 +233,4 @@ git push origin main
 
 ---
 
-*Last updated: 2026-03-18 01:30 EST*
+*Last updated: 2026-03-20 EST*
